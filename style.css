@@ -26,12 +26,13 @@ body {
 }
 
 h1 {
+  font-family: 'Nunito', sans-serif;
   margin: 0 auto;
   padding: 0;
-  font-size: 200%;
+  font-size: 230%;
   text-align: center;
-  letter-spacing: 0.125em;
-  text-shadow: 2px 2px 8px var(--lightGreen);
+  letter-spacing: 0.25em;
+  text-shadow: 3px 3px 8px var(--lightGreen);
 }
 
 .container {
@@ -45,25 +46,34 @@ h1 {
               30px 30px 50px var(--darkGreen);
 }
 
+p, ul, .quote {
+  margin: 15px;
+  padding: 25px;
+  color: var(--darkGreen);
+}
+
 @media (max-width: 480px) {
   .container {
     max-width: 100%;
+  }
+
+  p:first-of-type {
+    padding-top: 15px;
   }
 
   html {
     font-size: 1em;
   }
 
-  p, ul, .quote {
+  p, ul, .quote blockquote {
     margin: 5px;
-    padding: 5px;
+    padding: 9px;
   }
-}
 
-p, ul, .quote {
-  margin: 15px;
-  padding: 25px;
-  color: var(--darkGreen);
+  .quote {
+    padding: 3px 5px;
+  }
+
 }
 
 li {
@@ -72,7 +82,7 @@ li {
 
 a {
   text-decoration: none;
-  padding: 7px;
+  padding: 5px;
   border-radius: 8px;
   color: white;
   background-color: var(--green);
@@ -84,13 +94,22 @@ a:hover {
   color: var(--grey);
 }
 
-/* .quote {
-  background-color: var(--lightGreen);
-} */
+.quote {
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 35px;
+  color: var(--lightCream);
+  background-color: var(--green);
+  border: 2px solid var(--lightCream);
+  border-radius: 60px;
+  box-shadow: -15px -15px 30px var(--lightGreen) inset,
+              18px 18px 18px var(--darkGreen) inset;
+}
 
 .quote cite {
   display: block;
   text-align: right;
+  padding-right: 10%;
 }
 
 ul {
@@ -111,3 +130,8 @@ ul {
   font-weight: bold;
 } 
 
+.tweet-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
