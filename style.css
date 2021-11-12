@@ -1,19 +1,109 @@
 :root {
   font-family: 'Lora', serif;
   --cream: #FEF5ED;
+  --lightCream: #fffdfa;
   --lightGreen: #D3E4CD;
   --green: #ADC2A9;
   --darkGreen: #99A799;
   --white: #FAF9F6;
+  --grey: #3d3d3d;
+}
+
+::selection {
+  background-color: var(--lightGreen);
 }
 
 html {
   margin: 0;
   padding: 0;
+  font-size: 1.5em;
+  line-height: 1.7;
 }
 
 body {
   color: var(--darkGreen);
-  font-size: 1.25em;
   background: var(--cream);
 }
+
+h1 {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 200%;
+  text-align: center;
+  letter-spacing: 0.125em;
+  text-shadow: 2px 2px 8px var(--lightGreen);
+}
+
+.container {
+  max-width: 60%;
+  margin: 0px auto;
+  margin-bottom: 50px;
+  background-color: var(--cream);
+  border-radius: 60px;
+  border: 1px solid var(--lightGreen);
+  box-shadow: -30px -30px 40px var(--lightCream),
+              30px 30px 50px var(--darkGreen);
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+  }
+
+  html {
+    font-size: 1em;
+  }
+
+  p, ul, .quote {
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
+p, ul, .quote {
+  margin: 15px;
+  padding: 25px;
+  color: var(--darkGreen);
+}
+
+a {
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 7px;
+  color: white;
+  background-color: var(--green);
+}
+
+a:hover {
+  box-shadow: -4px -4px 0px var(--lightGreen),
+              4px 4px 0px var(--darkGreen);
+  color: var(--grey);
+}
+
+/* .quote {
+  background-color: var(--lightGreen);
+} */
+
+.quote cite {
+  display: block;
+  text-align: right;
+}
+
+ul {
+  list-style: none;
+}
+
+/* #kenobi {
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+#helloThere {
+  text-decoration: underline dotted;
+} */
+
