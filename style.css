@@ -135,3 +135,7 @@ ul {
   justify-content: center;
   margin-bottom: 35px;
 }
+
+.logo {
+  background-size: 10px 10px;
+}
