@@ -1,0 +1,19 @@
+:root {
+  font-family: 'Lora', serif;
+  --cream: #FEF5ED;
+  --lightGreen: #D3E4CD;
+  --green: #ADC2A9;
+  --darkGreen: #99A799;
+  --white: #FAF9F6;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--darkGreen);
+  font-size: 1.25em;
+  background: var(--cream);
+}
