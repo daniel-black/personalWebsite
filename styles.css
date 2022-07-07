@@ -1,0 +1,17 @@
+@font-face {
+  font-family: regularFont;
+  src: url('public/fonts/JosefinSans-Medium.ttf');
+}
+
+body {
+  font-family: regularFont;
+}
+
+@font-face {
+  font-family: headerFont;
+  src: url('public/fonts/JosefinSlab-Bold.ttf');
+}
+
+h1 {
+  font-family: headerFont;
+}
